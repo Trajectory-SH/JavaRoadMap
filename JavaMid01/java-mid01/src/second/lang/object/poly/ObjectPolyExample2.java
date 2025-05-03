@@ -1,8 +1,5 @@
 package second.lang.object.poly;
 
-
-import javax.smartcardio.Card;
-
 public class ObjectPolyExample2{
     public static void main(String[] args) {
         Dog dog = new Dog();
