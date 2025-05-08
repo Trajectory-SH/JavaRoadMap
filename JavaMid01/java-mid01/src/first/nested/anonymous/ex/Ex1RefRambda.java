@@ -14,6 +14,7 @@ public class Ex1RefRambda {
         hello(()->{
             int randomVal = new Random().nextInt(6) + 1;
             System.out.println("주사위: " + randomVal);
+                    System.out.println("test");
         }
         );
 
