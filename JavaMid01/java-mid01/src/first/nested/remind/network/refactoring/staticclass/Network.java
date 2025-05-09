@@ -1,4 +1,4 @@
-package first.nested.remind.network.refactoring;
+package first.nested.remind.network.refactoring.staticclass;
 
 public class Network {
 
