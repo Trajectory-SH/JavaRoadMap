@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaMid01/JavaMid01.iml" filepath="$PROJECT_DIR$/JavaMid01/JavaMid01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaRoadMap.iml" filepath="$PROJECT_DIR$/.idea/JavaRoadMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic/NoteTake/NoteTake.iml" filepath="$PROJECT_DIR$/JavaBasic/NoteTake/NoteTake.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaStart/NoteTake/NoteTake2.iml" filepath="$PROJECT_DIR$/JavaStart/NoteTake/NoteTake2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaStart/ReferenceNote/ReferenceNote.iml" filepath="$PROJECT_DIR$/JavaStart/ReferenceNote/ReferenceNote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic/ReferenceNote/ReferenceNote2.iml" filepath="$PROJECT_DIR$/JavaBasic/ReferenceNote/ReferenceNote2.iml" />
+    </modules>
+  </component>
+</project>
