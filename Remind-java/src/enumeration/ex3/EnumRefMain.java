@@ -5,6 +5,5 @@ public class EnumRefMain {
         System.out.println("class of BASIC = " + Grade.BASIC.getClass());
         System.out.println("class of GOLD = " + Grade.GOLD.getClass());
         System.out.println("class of DIAMOND = " + Grade.DIAMOND.getClass());
-
     }
 }
