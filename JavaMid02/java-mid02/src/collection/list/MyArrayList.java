@@ -2,8 +2,7 @@ package collection.list;
 
 import java.util.Arrays;
 
-public class  MyArrayList<T> implements MyList<T> {
-
+public class MyArrayList<E> implements MyList<E>{
 
     private static final int DEFAULT_CAPACITY = 5;
 
@@ -19,14 +18,12 @@ public class  MyArrayList<T> implements MyList<T> {
     }
 
     //elementData(arrayList)의 실제 크기를 반환하는 메서드
-    @Override
     public int size() {
         return size;
     }
 
     //elementData[size] -> 해당 배열의 맨 뒤에 추가하기-> O(1)
-    @Override
-    public void add(T element) {
+    public void add(E element) {
         if (size == elementData.length) {
             grow();
         }
@@ -35,8 +32,7 @@ public class  MyArrayList<T> implements MyList<T> {
     }
 
     //index 중간에 추가하기
-    @Override
-    public void add(int index, T element) {
+    public void add(int index, E element) {
         if (size == elementData.length) {
             grow();
         }
@@ -44,14 +40,12 @@ public class  MyArrayList<T> implements MyList<T> {
         elementData[index] = element;
         size++;
     }
-
     //요소의 마지막부터 Index까지 오른쪽으로 밀기
     private void shiftRightFrom(int index) {
         for (int i = size; i > index; i--) {
             elementData[i] = elementData[i - 1];
         }
     }
-
     //배열의 사이즈를 동적으로 늘린다.
     private void grow() {
         int oldCapacity = elementData.length;
@@ -60,21 +54,18 @@ public class  MyArrayList<T> implements MyList<T> {
     }
 
     @SuppressWarnings("unchecked")
-    @Override
-    public T get(int index) {
-        return (T) elementData[index];
+    public E get(int index) {
+        return (E) elementData[index];
     }
 
-    @Override
-    public T set(int index, T element) {
-        T oldValue = get(index);
+    public E set(int index, E element) {
+        E oldValue =get(index);
         elementData[index] = element;
         return oldValue;
     }
 
-    @Override
-    public T remove(int index) {
-        T oldValue = get(index);
+    public E remove(int index) {
+        E oldValue = get(index);
         shiftLeftFrom(index);
         size--;
         elementData[size] = null;
@@ -83,13 +74,12 @@ public class  MyArrayList<T> implements MyList<T> {
     }
 
     private void shiftLeftFrom(int index) {
-        for (int i = index; i < size - 1; i++) {
+        for (int i = index; i < size-1; i++) {
             elementData[i] = elementData[i + 1];
         }
     }
 
-    @Override
-    public int indexOf(T o) {
+    public int indexOf(E o) {
         for (int i = 0; i < size; i++) {
             if (o.equals(elementData[i])) {
                 return i;

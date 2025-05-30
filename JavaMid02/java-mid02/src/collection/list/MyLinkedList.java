@@ -1,6 +1,6 @@
-package collection.link_01;
+package collection.list;
 
-public class MyLinkedListV3<E> {
+public class MyLinkedList<E> implements MyList<E>{
     private Node<E> first;
     private int size = 0;
 
