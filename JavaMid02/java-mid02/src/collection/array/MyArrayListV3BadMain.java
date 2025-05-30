@@ -12,5 +12,6 @@ public class MyArrayListV3BadMain {
         System.out.println(numberList.get(0));
         Integer integer = (Integer) numberList.get(2);//ClassCastException
         System.out.println(numberList.get(2));
+
     }
 }
