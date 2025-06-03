@@ -1,8 +1,9 @@
 package basic.static2.ex;
 
-public class MathArrayUtils {
+import java.util.LinkedList;
 
-    private MathArrayUtils() {
+public class MathArrayUtils {
+        private MathArrayUtils() {
     }
 
     public static int sum(int[] values) {
