@@ -21,6 +21,5 @@ public class ItemPriceTest {
             }
         }
         System.out.println(result);
-
     }
 }
